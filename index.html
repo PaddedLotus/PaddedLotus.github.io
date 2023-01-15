@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Random Drink Picker</title>
+    </head>
+<center><body>
+
+<h1>Random Drink Picker</h1>
+<p> by Lotus aka Winter Kleinschmidt</p>
+
+<br>
+  
+  <h2>Your drink is:</h2>
+  <h3 id="randomWord"></h3>
+  <button onclick="randomizeFunction()">Randomize!!</button>
+  <script>
+    const myList = [ "Juice", "Soda/Pop", "Milk", "Water", "Lemonade" , "Energy Drink","Tea", "Coffee", "Hot Coco"];
+    
+    randomizeFunction()
+    
+    function randomizeFunction() {
+        document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+    }
+    </script>
+
+<br>
+
+</body></center>
+</html>
